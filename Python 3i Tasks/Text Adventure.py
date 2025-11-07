@@ -54,6 +54,7 @@ def move_player(current_location, direction):
     Move the player in the given direction.
     Return the new location, or current location if can't move that way.
     """
+    global current_room
     if current_location == "start" and direction == "hn":
         current_room = "center"
         display_location(current_room)
